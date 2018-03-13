@@ -1,0 +1,42 @@
+body {
+	background: #000;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#project-holdout {
+	text-align: center;
+	padding: 50px 0;
+	background: #071C09;
+}
+
+#project-holdout h1 {
+	color: #C8CAC7;
+	font-size: 60px;
+	font-weight: 600;
+}
+
+#footer {
+	padding: 10px 0;
+	background: #000;
+}
+
+#footer ul {
+	list-style: none;
+	font-size: 25px;
+	padding: 0;
+	margin: 0; 
+}
+
+#footer ul li {
+	display: inline-block;
+	margin: 0 15px;
+}
