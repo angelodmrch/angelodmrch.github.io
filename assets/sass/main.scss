@@ -1,0 +1,131 @@
+@import 'global';
+
+/*col-lg*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+		
+}
+
+/*col-lg - col-md*/
+@media screen and (min-width: 992px) { 
+	#header {
+
+	}
+
+	#projects {
+		
+		background: #ddd;
+
+		h1 {
+			color: #000;
+		}
+
+		.hold-out {
+			background: #071C09;
+			text-align: center;
+			padding: 30px;
+				h2 {
+				color: #C8CAC7;
+				font-size: 30px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	#footer {
+		padding: 10px 0;
+		background: #000;
+		text-align: center;
+		ul {
+			list-style: none;
+			font-size: 25px;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				a {
+					color: #fff;
+					text-decoration: none;
+					&:hover {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+
+				&.games {
+					display: none;
+				}				
+			}	
+		}
+	}
+}
+
+/*col-md*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+}
+
+/*col-sm*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/*col-sm - col-xs*/
+@media screen and (max-width: 991px) {
+	#header {
+
+	}
+
+	#projects {
+		
+		background: #ddd;
+
+		h1 {
+			color: #000;
+		}
+
+		.hold-out {
+			background: #071C09;
+			text-align: center;
+			padding: 30px;
+				h2 {
+				color: #C8CAC7;
+				font-size: 30px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	#footer {
+		padding: 10px 0;
+		background: #000;
+		text-align: center;
+		ul {
+			list-style: none;
+			font-size: 25px;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				a {
+					color: #fff;
+					text-decoration: none;
+					&:hover {
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+
+				&.games {
+					display: none;
+				}				
+			}	
+		}
+	}
+}
+
+/*col-xs*/
+@media screen and (max-width: 768px) {
+
+}

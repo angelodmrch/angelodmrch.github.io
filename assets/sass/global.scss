@@ -1,0 +1,62 @@
+@import 'variables';
+
+body {
+  font-family: 'sans-serif';
+  margin: 0;background: #000;
+  background: #000;
+}
+
+.white-color, .white-color:hover { color: $color-white; }
+.black-color, .black-color:hover { color: $color-black; }
+
+.uppercase { text-transform: uppercase; }
+
+// PADDING
+@for $p from 0 through 9 {
+  .pt-#{$p} { padding-top: $padding * $p; }    
+    .pr-#{$p} { padding-right: $padding * $p; }    
+    .pb-#{$p} { padding-bottom: $padding * $p; }    
+    .pl-#{$p} { padding-left: $padding * $p; }   
+
+    .p-#{$p} { padding: $padding * $p; } 
+    .px-#{$p} { padding: $padding * $p 0; }
+    .py-#{$p} { padding: 0 $padding * $p; }
+}
+
+// MARGIN 
+@for $m from 0 through 9 {
+  .mt-#{$m} { margin-top: $margin * $m; }    
+    .mr-#{$m} { margin-right: $margin * $m; }    
+    .mb-#{$m} { margin-bottom: $margin * $m; }    
+    .ml-#{$m} { margin-left: $margin * $m; }    
+
+    .m-#{$m} { margin: $margin * $m; } 
+    .mx-#{$m} { margin: $margin * $m 0; }
+    .my-#{$m} { margin: 0 $margin * $m; }
+}
+
+// FONT SIZE
+@for $f from 10 through 50 {
+  @if($f % 2 == 0) {
+    .fs-#{$f} { font-size: #{$f}px; }
+  }
+}
+
+.fw-normal { font-weight: $normal; }
+.fw-semi { font-weight: $semi; }
+.fw-bold { font-weight: $bold; }
+.fw-extra-bold { font-weight: $extra-bold; }
+
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+.letter-spacing-3 { letter-spacing: 3px; }
+.letter-spacing-4 { letter-spacing: 4px; }
+.letter-spacing-5 { letter-spacing: 5px; }
+
+.dpb { display: block; }
+
+.w-100 { width: 100%; }
+
+.clearfix {
+  height: 0px;
+}

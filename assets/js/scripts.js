@@ -12,5 +12,7 @@ function onKonamiCode(cb) {
 }
 
 onKonamiCode(function () {
-	alert('\\o\/');
+	
+  jQuery('.games').css('display', 'inline-block');
+
 });
