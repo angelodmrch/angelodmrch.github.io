@@ -1,13 +1,11 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-
+var gulp    = require('gulp');
+var sass    = require('gulp-sass');
 var plugins	= require( "gulp-load-plugins" )({ lazy: false });
-var fs		= require( "fs" );
 var argv	= require( "minimist" )(process.argv.slice(1));
 
 var config = {
     bower: './bower_components',
-    bootstrapOficialDir: './bower_components/bootstrap-sass',
+    bootstrapDir: './bower_components/bootstrap',
     publicDir: './assets',
 };
 
@@ -23,7 +21,7 @@ gulp.task('css', function() {
 	.pipe( plugins.rename({
 		suffix: '.min'
 	}))
-    .pipe( plugins.if( !( argv.d || argv.debug ), plugins.minifyCss() ) )
+    .pipe( plugins.if( !( argv.d || argv.debug ), plugins.cleanCss() ) )
     .pipe(gulp.dest(config.publicDir + '/css'));
 });
 
@@ -33,8 +31,6 @@ gulp.task('fonts', function() {
 });
 
 gulp.task( 'watch', function() {
-	gulp.watch([ 'assets/sass/**/*.scss'], ['css']);
+	gulp.watch('assets/sass/**/*.scss', gulp.series('css'));
 });
 
-
-gulp.task('default', ['watch']);

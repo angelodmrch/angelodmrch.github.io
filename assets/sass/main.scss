@@ -1,16 +1,12 @@
 @import 'global';
 
-/*col-lg*/
-@media screen and (min-width: 1200px) and (max-width: 1399px) {
+/*col-xl*/
+@media screen and (min-width: 1200px) {
 		
 }
 
-/*col-lg - col-md*/
-@media screen and (min-width: 992px) { 
-	#header {
-
-	}
-
+/*col-lg col-xl*/
+@media screen and (min-width: 992px) {
 	#projects {
 		
 		background: #ddd;
@@ -58,24 +54,20 @@
 			}	
 		}
 	}
+}
+
+/*col-lg*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+		
 }
 
 /*col-md*/
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	
 }
 
-/*col-sm*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/*col-sm - col-xs*/
+/*col-sm col-md*/
 @media screen and (max-width: 991px) {
-	#header {
-
-	}
-
 	#projects {
 		
 		background: #ddd;
@@ -125,7 +117,12 @@
 	}
 }
 
-/*col-xs*/
-@media screen and (max-width: 768px) {
+/*col-sm*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	 
+}
 
+/*col-xs*/
+@media screen and (max-width: 575px) {
+	
 }
