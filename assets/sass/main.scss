@@ -7,9 +7,46 @@
 
 /*col-lg col-xl*/
 @media screen and (min-width: 992px) {
-	#projects {
-		
+	#header {
+		text-align: center;
+		position: fixed;
+		width: 100%;
+		background: $color-black;
+		padding: 10px 0;
+		text-transform: uppercase;
+
+		a {
+			font-size: 20px;
+			color: #fff;
+			text-decoration: none;
+			margin: 15px;
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+				font-weight: $bold;
+			}
+		}
+	}
+
+	#about {
+		min-height: 100vh;
+		padding: 100px 0; 
+		background: rgb(0,0,0);
+		background: -webkit-linear-gradient(bottom left, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background: -o-linear-gradient(bottom left, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background: linear-gradient(to top right, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background-attachment: fixed;
+		color: $color-white;
+		display: grid;
+		place-items: center;
+		text-align: center;
+	}
+
+
+	#side-projects {		
 		background: #ddd;
+		min-height: calc(100vh - 57px);
+		padding: 100px 0; 
 
 		h1 {
 			color: #000;
@@ -68,9 +105,46 @@
 
 /*col-sm col-md*/
 @media screen and (max-width: 991px) {
-	#projects {
-		
+	#header {
+		text-align: center;
+		position: fixed;
+		width: 100%;
+		background: $color-black;
+		padding: 10px 0;
+		text-transform: uppercase;
+
+		a {
+			font-size: 20px;
+			color: #fff;
+			text-decoration: none;
+			margin: 15px;
+			&:hover {
+				color: #fff;
+				text-decoration: none;
+				font-weight: $bold;
+			}
+		}
+	}
+
+	#about {
+		min-height: 100vh;
+		padding: 100px 0; 
+		background: rgb(0,0,0);
+		background: -webkit-linear-gradient(bottom left, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background: -o-linear-gradient(bottom left, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background: linear-gradient(to top right, rgba(0,0,0,1) 0%, rgba(27,65,97,1) 100%);
+		background-attachment: fixed;
+		color: $color-white;		
+		display: grid;
+		place-items: center;
+		text-align: center;
+	}
+
+
+	#side-projects {		
 		background: #ddd;
+		min-height: calc(100vh - 57px);
+		padding: 100px 0; 
 
 		h1 {
 			color: #000;
