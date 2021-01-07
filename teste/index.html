@@ -5,6 +5,9 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="  crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="pinterest" content="nopin">
 </head>
 <body>
 
@@ -64,7 +67,7 @@
 		var items = getCookie('items');
 
 
-		if (date == today && items ) {
+		if (date == today && items) {
 			$('h3').html(today);
 
 			var newlist = JSON.parse(items);
@@ -120,6 +123,12 @@
 	body {
 		font-family: Roboto, sans-serif;
 		text-align: center;
+		display: grid;
+		place-items: center;
+		padding: 0;
+		margin: 0;
+		height: 100vh;
+		background: #f0f;
 	}
 
 	ul {
@@ -127,4 +136,31 @@
 		list-style: none;
 		font-size: 30px;
 	}
+
+
+
+	.fa-hand-point-right, .fa-hand-point-left, .fa-thumbs-down {
+		color: #f00;
+	}
+
+	.fa-hand-lizard, .fa-user {
+		color: #0f0;
+	}
+
+	.fa-male, .fa-chair, .fa-bed {
+		color: #00f;
+	}
+
+	.fa-comment-dots, .fa-video {
+		color: #ff0;
+	}
+
+	.fa-tint, .fa-soap, .fa-sun {
+		color: #0ff;
+	}
+
+	.fa-skull-crossbones {
+		color: #000;
+	}
+
 </style>
