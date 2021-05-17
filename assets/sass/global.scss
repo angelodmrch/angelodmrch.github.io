@@ -1,62 +1,60 @@
-@import 'variables';
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;background: #000;
   background: #000;
 }
 
-.white-color, .white-color:hover { color: $color-white; }
-.black-color, .black-color:hover { color: $color-black; }
-
-.uppercase { text-transform: uppercase; }
-
 // PADDING
 @for $p from 0 through 9 {
-  .pt-#{$p} { padding-top: $padding * $p; }    
-    .pr-#{$p} { padding-right: $padding * $p; }    
-    .pb-#{$p} { padding-bottom: $padding * $p; }    
-    .pl-#{$p} { padding-left: $padding * $p; }   
+  .pt-#{$p} { padding-top: 15 * $p; }    
+    .pr-#{$p} { padding-right: 15 * $p; }    
+    .pb-#{$p} { padding-bottom: 15 * $p; }    
+    .pl-#{$p} { padding-left: 15 * $p; }   
 
-    .p-#{$p} { padding: $padding * $p; } 
-    .px-#{$p} { padding: $padding * $p 0; }
-    .py-#{$p} { padding: 0 $padding * $p; }
+    .p-#{$p} { padding: 15 * $p; } 
+    .px-#{$p} { padding: 15 * $p 0; }
+    .py-#{$p} { padding: 0 15 * $p; }
 }
 
 // MARGIN 
 @for $m from 0 through 9 {
-  .mt-#{$m} { margin-top: $margin * $m; }    
-    .mr-#{$m} { margin-right: $margin * $m; }    
-    .mb-#{$m} { margin-bottom: $margin * $m; }    
-    .ml-#{$m} { margin-left: $margin * $m; }    
+  .mt-#{$m} { margin-top: 15 * $m; }    
+    .mr-#{$m} { margin-right: 15 * $m; }    
+    .mb-#{$m} { margin-bottom: 15 * $m; }    
+    .ml-#{$m} { margin-left: 15 * $m; }    
 
-    .m-#{$m} { margin: $margin * $m; } 
-    .mx-#{$m} { margin: $margin * $m 0; }
-    .my-#{$m} { margin: 0 $margin * $m; }
+    .m-#{$m} { margin: 15 * $m; } 
+    .mx-#{$m} { margin: 15 * $m 0; }
+    .my-#{$m} { margin: 0 15 * $m; }
 }
 
-// FONT SIZE
-@for $f from 10 through 50 {
-  @if($f % 2 == 0) {
-    .fs-#{$f} { font-size: #{$f}px; }
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 25%;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: 50%;
   }
 }
 
-.fw-normal { font-weight: $normal; }
-.fw-semi { font-weight: $semi; }
-.fw-bold { font-weight: $bold; }
-.fw-extra-bold { font-weight: $extra-bold; }
-
-.letter-spacing-1 { letter-spacing: 1px; }
-.letter-spacing-2 { letter-spacing: 2px; }
-.letter-spacing-3 { letter-spacing: 3px; }
-.letter-spacing-4 { letter-spacing: 4px; }
-.letter-spacing-5 { letter-spacing: 5px; }
-
-.dpb { display: block; }
-
-.w-100 { width: 100%; }
-
-.clearfix {
-  height: 0px;
+@media screen and (max-width: 576px) {
+  .col {
+    width: 100%;
+  }
 }
