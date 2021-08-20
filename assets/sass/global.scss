@@ -1,29 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;background: #000;
+  margin: 0;
   background: #000;
+}
+
+img {
+  max-width: 100%;
 }
 
 // PADDING
 @for $p from 0 through 9 {
-  .pt-#{$p} { padding-top: 15 * $p; }    
-    .pr-#{$p} { padding-right: 15 * $p; }    
-    .pb-#{$p} { padding-bottom: 15 * $p; }    
-    .pl-#{$p} { padding-left: 15 * $p; }   
+  .pt-#{$p} { padding-top: 15 * $p; }
+    .pr-#{$p} { padding-right: 15 * $p; }
+    .pb-#{$p} { padding-bottom: 15 * $p; }
+    .pl-#{$p} { padding-left: 15 * $p; }
 
-    .p-#{$p} { padding: 15 * $p; } 
+    .p-#{$p} { padding: 15 * $p; }
     .px-#{$p} { padding: 15 * $p 0; }
     .py-#{$p} { padding: 0 15 * $p; }
 }
 
 // MARGIN 
 @for $m from 0 through 9 {
-  .mt-#{$m} { margin-top: 15 * $m; }    
-    .mr-#{$m} { margin-right: 15 * $m; }    
-    .mb-#{$m} { margin-bottom: 15 * $m; }    
-    .ml-#{$m} { margin-left: 15 * $m; }    
+  .mt-#{$m} { margin-top: 15 * $m; }
+    .mr-#{$m} { margin-right: 15 * $m; }
+    .mb-#{$m} { margin-bottom: 15 * $m; }
+    .ml-#{$m} { margin-left: 15 * $m; }
 
-    .m-#{$m} { margin: 15 * $m; } 
+    .m-#{$m} { margin: 15 * $m; }
     .mx-#{$m} { margin: 15 * $m 0; }
     .my-#{$m} { margin: 0 15 * $m; }
 }
