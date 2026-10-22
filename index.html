@@ -1,73 +1,101 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Angelo Demarchi</title>
-		<meta charset="utf-8">
-		<meta name="author" content="Angelo Demarchi">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="pinterest" content="nopin">
-	    <meta name="theme-color" content="#000000">
-	    <meta name="msapplication-navbutton-color" content="#000000">
-	    <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-	    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"> 
-	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	    <link rel="stylesheet" href="assets/css/main.min.css">	
-	</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Angelo Demarchi</title>
+        <meta name="author" content="Angelo Demarchi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="pinterest" content="nopin" />
 
-	<body>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144367413-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
 
-		  gtag('config', 'UA-144367413-1');
-		</script>
+        <style>
+            :root {
+                --primariy: #EDEDED;
+                --secondary: #4E9F3D;
+                --background: #191A19;
+            }
 
-		<section id="header">
-			<div class="container">
-				<a href="#about-me">About Me</a>
-				<a href="#side-projects">Side Projects</a>
-			</div>
-		</section>
+            html {
+                padding: 0;
+                margin: 0;
+                background-color: var(--background);
+            }
+            
+            body {
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+                display: flex;
+                place-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                padding: 0;
+                margin: 0;
+                color: var(--primariy);
+            }
+            
+            .container {
+                max-width: 960px;
+                margin: 0 auto;
+            }
 
-		<section id="about-me">
-			<div class="container">
-				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem non numquam debitis tempora sunt sed fugiat sit. Natus, ad. Magni laborum, illo, repudiandae voluptate doloremque reprehenderit fuga cumque id mollitia?</p>
-				<p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Quidem non numquam debitis tempora sunt sed fugiat sit. Natus, ad. Magni laborum, illo, repudiandae voluptate doloremque reprehenderit fuga cumque id mollitia?</p>
-			</div>		
-		</section>
+            .container img {
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+            }
 
-		<section id="side-projects">	
-			<div class="container">
-				<h1 class="text-center mb-5">Side Projetcs</h1>
-				
-				<div class="row">				
-					<div class="col">
-						<div class="project hold-out">
-							<div class="content">
-								<h2 class="mb-5">HOLD OUT</h2>
+            .container ul {
+                list-style: none;
+                padding: 0;
+                padding-top: 40px;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: center;
+            }
 
-								<a href='https://play.google.com/store/apps/details?id=com.Dmrch.TAMN' target="_blank">
-									<img alt='Disponível no Google Play' src='assets/images/pt_badge_web_generic.png' width="200px" />
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            .container li {
+                display: block;
+            }
 
-		<section id="footer" class="text-center">		
-			<ul>
-				<li><a href="https://github.com/angelodmrch" target="_blank"><i class="fab fa-github"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/angelo-demarchi-5a229479/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-				<li><a href="https://www.facebook.com/angelo.demarchi.3" target="_blank"><i class="fab fa-facebook-f"></i></a></li>		
-				<li><a href="https://www.instagram.com/demarchi_angelo/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://twitter.com/angelodmrch" target="_blank"><i class="fab fa-twitter"></i></i></a></li>
-			</ul>
-		</section>
-	</body>
+            .container li a {
+                text-decoration: none;
+                color: inherit;
+                font-size: 50px;
+            }
+
+            .container li a:hover,
+            .container li a:focus {
+                color: var(--secondary);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <img src="assets/images/avatar.jpg" alt="Angelo">
+
+            <h1>Angelo Demarchi</h1>
+            <p>Web Developer</p>
+
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/angelo-demarchi-5a229479" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/angelodmrch" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>            
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
