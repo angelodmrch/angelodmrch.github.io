@@ -1,0 +1,11 @@
+.git
+.gitignore
+.dockerignore
+Dockerfile
+node_modules
+package.json
+package-lock.json
+gulpfile.js
+README.md
+assets/fonts/fontawesome/less
+assets/fonts/fontawesome/scss
